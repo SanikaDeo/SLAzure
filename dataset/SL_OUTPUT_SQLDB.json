@@ -1,0 +1,52 @@
+{
+	"name": "SL_OUTPUT_SQLDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SL_AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "varchar"
+			},
+			{
+				"name": "NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "SOFTWARETECH",
+				"type": "varchar"
+			},
+			{
+				"name": "STARTDATE",
+				"type": "varchar"
+			},
+			{
+				"name": "ENDDATE",
+				"type": "varchar"
+			},
+			{
+				"name": "AMOUNT",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "CURR",
+				"type": "varchar"
+			},
+			{
+				"name": "COUPANAM",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "training"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

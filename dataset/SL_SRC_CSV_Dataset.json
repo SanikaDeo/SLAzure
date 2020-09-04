@@ -1,0 +1,57 @@
+{
+	"name": "SL_SRC_CSV_Dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Training.csv",
+				"container": "slblob"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "NAME",
+				"type": "String"
+			},
+			{
+				"name": "SOFTWARETECH",
+				"type": "String"
+			},
+			{
+				"name": "STARTDATE",
+				"type": "String"
+			},
+			{
+				"name": "ENDDATE",
+				"type": "String"
+			},
+			{
+				"name": "AMOUNT",
+				"type": "String"
+			},
+			{
+				"name": "CURR",
+				"type": "String"
+			},
+			{
+				"name": "COUPANAMT",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
